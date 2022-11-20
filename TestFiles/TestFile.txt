@@ -1,0 +1,13 @@
+test1 B|
+
+int number;
+number -> 345b1;
+
+go(number > 0) |
+number -> number + 5;
+else
+number -> number - 5;
+
+String w_ord_;
+
+|E

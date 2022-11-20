@@ -1,0 +1,11 @@
+multi B|
+
+main {
+	int x;
+	x = 5;
+	String abc;
+	abc = abc + x;
+
+}
+
+|E

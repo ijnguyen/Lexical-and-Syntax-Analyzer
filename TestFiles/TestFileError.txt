@@ -1,0 +1,6 @@
+b int a;
+a <- 2;
+int 23 = 25;
+int 23++; 
+int sum;
+int a + 23; |e

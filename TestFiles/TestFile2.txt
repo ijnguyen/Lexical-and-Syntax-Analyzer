@@ -1,0 +1,13 @@
+test2 B|
+
+int ident_1;
+int ident_2;
+
+int product;
+
+ident_1 -> 34;
+ident_2 -> 100;
+
+product -> ident_1 * ident_2;
+
+|E
