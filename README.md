@@ -59,5 +59,6 @@ Yes, it passes disjoint test by not starting with same nonterminals.
 I think it will not be ambiguous because the grammar does not create more than one derivations or parse trees. 
 
 ## LR(1)
+Using the rules from Operations above and result:
 
 ![image](https://user-images.githubusercontent.com/94132772/202885670-4e5d02a1-6055-49b9-81e6-e46baafd6cb0.png)
