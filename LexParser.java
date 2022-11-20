@@ -18,6 +18,8 @@ public class LexParser {
 	public static int RIGHT_PAREN = 14;
 	
 	public static void main(String[] args) {
+		Scanner scan;
+		scan = new Scanner(new File("TestFile.txt"));
 		
 	}
 
