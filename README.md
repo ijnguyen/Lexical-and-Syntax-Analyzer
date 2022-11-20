@@ -2,6 +2,11 @@
 This is a lexical and syntax analyzer.
 
 ## Rules for recognizing all lexemes as their proper token
+Operations and its tokens:
+
+![image](https://user-images.githubusercontent.com/94132772/202885369-3614eac1-072f-472b-9a06-714903586e0e.png)
+
+
 Integer:
 ```
 [0-9]*(b1|b2|b4|b8)
