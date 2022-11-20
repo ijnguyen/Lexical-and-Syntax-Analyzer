@@ -60,3 +60,4 @@ I think it will not be ambiguous because the grammar does not create more than o
 
 ## LR(1)
 
+![image](https://user-images.githubusercontent.com/94132772/202885670-4e5d02a1-6055-49b9-81e6-e46baafd6cb0.png)
