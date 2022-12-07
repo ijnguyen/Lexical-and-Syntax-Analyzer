@@ -46,7 +46,7 @@ public class LexProgram {
 	public static void main(String[] args) throws IOException {
 
 		// try out the 4 test files
-		File testFile = new File("input.txt");
+		File testFile = new File("testFile.txt");
 		Scanner scanner = new Scanner(testFile);
 
 		int lineNum = 0;
