@@ -46,7 +46,7 @@ public class LexProgram {
 	public static void main(String[] args) throws IOException {
 
 		// try out the 4 test files
-		File testFile = new File("TestFile.txt");
+		File testFile = new File("input.txt");
 		Scanner scanner = new Scanner(testFile);
 
 		int lineNum = 0;
@@ -65,9 +65,10 @@ public class LexProgram {
 
 				do {
 					lex();
+					expr();
 				} while (nextToken != '&');
 
-				System.out.println(" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 			}
 		}
 		scanner.close();
@@ -316,4 +317,50 @@ public class LexProgram {
 		return nextTokenName;
 	}
 
+	// Order of Operations: PESDMA
+	public static void expr() throws IOException {
+		System.out.println(" --> <expr>");
+		term();
+
+		// Addition or Multiplication
+		while (nextToken == ADD_OP || nextToken == MULT_OP) {
+			lex();
+			term();
+		}
+
+		System.out.println("xxx <expr>");
+		System.out.println("- - - - - -");
+	}
+
+	public static void term() throws IOException {
+		System.out.println(" --> <term>");
+		factor();
+
+		// Division or Subtraction
+		while (nextToken == DIV_OP || nextToken == SUB_OP) {
+			lex();
+			factor();
+		}
+		System.out.println("xxx <term>");
+	}
+
+	public static void factor() throws IOException {
+		System.out.println(" --> <factor>");
+
+		// id
+		if (nextToken == IDENT) {
+			lex();
+		} else if (nextToken == INT_LIT) {
+			lex();
+		} else {
+			// (expr)
+			if (nextToken == LEFT_PAREN) {
+				lex();
+				if (nextToken == RIGHT_PAREN) {
+					lex();
+				}
+			}
+		}
+		System.out.println("xxx <factor>");
+	}
 }
