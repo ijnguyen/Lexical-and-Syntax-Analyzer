@@ -36,7 +36,8 @@ T → T * F
 T → F
 F → F / A
 F → A
-A → B - C
+A → A - B
+A → B
 B → C
 C → id
 C → (E)
@@ -59,6 +60,22 @@ Yes, it passes disjoint test by not starting with same nonterminals.
 I think it will not be ambiguous because the grammar does not create more than one derivations or parse trees. 
 
 ## LR(1)
-Using the rules from Operations above and result:
+Using the ***rules from Orders of Operations above*** and result:
 
-![image](https://user-images.githubusercontent.com/94132772/202885796-53a531c8-a5c0-4bb2-9107-0a792e9aa022.png)
+![image](https://user-images.githubusercontent.com/94132772/206051136-33206bf6-ff8e-42f0-8eed-bfa01e9a7200.png)
+1. Code sample: id + id / id - id * id [PASS]
+
+![image](https://user-images.githubusercontent.com/94132772/206051478-d59d2365-9a19-47cc-a1ca-662549d99f92.png)
+
+2. Code sample: id + id / id - id + id [FAIL]
+
+![image](https://user-images.githubusercontent.com/94132772/206051886-e9d40ef0-7082-4175-bf6f-25c852e3d7e3.png)
+
+3. Code sample: id - id * id + id [PASS]
+
+![image](https://user-images.githubusercontent.com/94132772/206052728-a0251a34-f028-42e6-8865-9dd5ade2a6ee.png)
+
+4. Code sample: id - id * id / id [FAIL]
+
+![image](https://user-images.githubusercontent.com/94132772/206052924-59d5c47b-9114-4c8c-a023-4fc803102a11.png)
+
