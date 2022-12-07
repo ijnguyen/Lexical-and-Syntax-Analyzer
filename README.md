@@ -63,20 +63,19 @@ I think it will not be ambiguous because the grammar does not create more than o
 ## LR(1)
 Using the ***rules from Orders of Operations above*** and result:
 
-![image](https://user-images.githubusercontent.com/94132772/206051136-33206bf6-ff8e-42f0-8eed-bfa01e9a7200.png)
+![image](https://user-images.githubusercontent.com/94132772/206095744-b8ff769b-3a18-4bbe-b141-88a6c2c36f6c.png)
 1. Code sample: id + id / id - id * id [PASS]
 
-![image](https://user-images.githubusercontent.com/94132772/206051478-d59d2365-9a19-47cc-a1ca-662549d99f92.png)
+![image](https://user-images.githubusercontent.com/94132772/206095796-005d9188-b568-4ed1-82d9-679139f2ad5c.png)
 
 2. Code sample: id + id / id - id + id [FAIL]
 
-![image](https://user-images.githubusercontent.com/94132772/206051886-e9d40ef0-7082-4175-bf6f-25c852e3d7e3.png)
+![image](https://user-images.githubusercontent.com/94132772/206095908-6bbbbb63-fc7d-4fb4-940f-3e79fe12d48a.png)
 
 3. Code sample: id - id * id + id [PASS]
 
-![image](https://user-images.githubusercontent.com/94132772/206052728-a0251a34-f028-42e6-8865-9dd5ade2a6ee.png)
+![image](https://user-images.githubusercontent.com/94132772/206096010-a46ff3c0-50c9-457e-a0e2-5c0929284328.png)
 
 4. Code sample: id - id * id / id [FAIL]
 
-![image](https://user-images.githubusercontent.com/94132772/206052924-59d5c47b-9114-4c8c-a023-4fc803102a11.png)
-
+![image](https://user-images.githubusercontent.com/94132772/206096133-995fa298-8193-4b9b-9707-ea405bf47742.png)
