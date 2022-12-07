@@ -65,6 +65,10 @@ I think it will not be ambiguous because the grammar does not create more than o
 Using the ***rules from Orders of Operations above*** and result:
 
 ![image](https://user-images.githubusercontent.com/94132772/206095744-b8ff769b-3a18-4bbe-b141-88a6c2c36f6c.png)
+
+<img width="942" alt="image" src="https://user-images.githubusercontent.com/94132772/206274529-898657ca-7784-43cd-97d5-a1b1f6351756.png">
+<img width="942" alt="image" src="https://user-images.githubusercontent.com/94132772/206274728-66c014c2-9ef0-43fb-a125-37631b931d02.png">
+
 1. Code sample: id + id / id - id * id [PASS]
 
 ![image](https://user-images.githubusercontent.com/94132772/206095796-005d9188-b568-4ed1-82d9-679139f2ad5c.png)
