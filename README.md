@@ -50,8 +50,9 @@ Program structure
 <Statement> ::= <if> | <assign>
 <if> ::= go (<bool_expr>) | <Statement> [else <Statement>]
 <assign> ::= `id` `->` <expr>
-<expr> ::= <term> {(+|-) <term>}
-<factor> ::= id | (<expr>)
+<expr> ::= <term> {(+|*) <term>}
+<term> ::= <factor> {(/|-) <factor>}
+<factor> ::= id | integer |(<expr>)
 ```
 
 ## LL Grammar
