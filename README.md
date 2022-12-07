@@ -40,6 +40,7 @@ A → A - B
 A → B
 B → C
 C → id
+C → integer
 C → (E)
 ```
 Program structure
